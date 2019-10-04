@@ -85,7 +85,7 @@ body{
 	font-weight: bold;
 }
 .header-top-nav ul li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 .header-top-nav ul li a span{
 	color:#D70D87;
@@ -376,9 +376,9 @@ body{
 	padding-left:5px;
 }
 .content-sidebar li a:hover{
-	background: url(../images/sepHor.png) repeat-x left bottom;
-	background-color:#eee;
-	color:#94CB32;
+	/* background: url(../images/sepHor.png) repeat-x left bottom;
+	background-color:#eee; */
+	/* color:#94CB32; */
 }
 /*---footer---*/
 /*  GRID OF FOUR   ============================================================================= */
@@ -433,7 +433,7 @@ body{
 	font-size:0.8em;
 }
 .span_1_of_4 ul li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 .footer-secondgrid ul{
 	margin-top:10px;
@@ -504,6 +504,9 @@ body{
 .footer {
 	margin-top: 30px;
 }
+.anh{
+	background-position: -35px bottom !important;
+}
 /*---about-us----*/
 .about h4{
 	color: #575757;
@@ -545,7 +548,7 @@ body{
 	-webkit-transition: 0.5s ease;
 }
 .about-frist li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 .about-frist ul li{
 	line-height: 1.5em;
@@ -747,7 +750,7 @@ body{
 	font-weight: bold;
 }
 .back-links ul li a:hover,.details-categories ul li a:hover,.active1 a{
-	color: #94CB32;
+	/* color: #94CB32; */
 }
 .back-links ul li img{
 	padding:0px 3px;
@@ -855,7 +858,7 @@ body{
 	font-weight: bold;
 }
 .share ul li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 .brand-history h3{
 	font-family: 'Open Sans', sans-serif;
@@ -992,10 +995,10 @@ body{
 	cursor:pointer;
 }
 .contact-form input[type="submit"]:hover{
-	border: 1px solid #575757;
+	/* border: 1px solid #575757;
 	background:#575757;
 	text-decoration: none;
-	color: #94CB32;
+	color: #94CB32; */
 }
 .contact-form input[type="submit"]:active{
 	background-color:#F7503D;  
@@ -1127,7 +1130,7 @@ body{
 	color:#575757;
 }
 .blog-grid-header ul li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 .blog-grid h4{
 	font-family: 'Open Sans', sans-serif;
@@ -1211,7 +1214,7 @@ body{
 		margin-left: 0px;
 }
 .span_2_of_3 .button a:hover{
-	    color:#94CB32;
+	    /* color:#94CB32; */
 }
 
 /***** Media Quries *****/
@@ -1282,7 +1285,7 @@ body{
 	margin-left: 0px;
 }
 .pagnation ul li a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 /*----error-page-----*/
 .error-page{
@@ -1313,7 +1316,7 @@ body{
 	font-weight: normal;
 }
 .copy-right a:hover{
-	color:#94CB32;
+	/* color:#94CB32; */
 }
 /*----responsive-layouts----*/
 @media screen and (max-width: 1366px) {
@@ -1563,4 +1566,159 @@ a#show_cart {
     font-size: 0.7125em;
 	padding: 6px 1px;
 }
+}
+
+/* CSS của component Giỏ Hàng */
+
+.tongThanhTien{
+	position: absolute;
+	/* width: 200px; */
+	right: 0;
+	/* width: 195.2px; */
+	/* padding: 20px 0; */
+	text-align: center;
+	bottom: 0;
+}
+
+
+.closeGioHangIcon{
+	position: absolute;
+	top: -3px;
+	right: 0px;
+}
+
+.closeGioHangIcon:hover>i{
+	color: red;
+}
+
+.closeGioHangIcon>i{
+	color: white
+}
+
+.tongThanhTien>p{	
+	background-color: skyblue;
+	color: yellow;
+	padding: 10px 10px;
+	border: 1px skyblue solid;
+	border-radius: 7px;
+	/* width: auto; */
+}
+
+.gioHang{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border: 2px solid #ccc;
+}
+
+.col-gioHang{
+	border: 1px solid #ccc;
+	padding: 20px 40px;
+	vertical-align: middle
+}
+
+.col-gioHang>img{
+	height: 100px;
+}
+
+.divGioHang{
+	position: relative;
+	width: 80%;
+	/* height: calc(100% + 61px); */
+	/* overflow: auto; */
+	padding-bottom: 62px
+}
+
+.row-gioHang:hover{
+	background-color: #ccc;
+}
+
+.row-gioHang:hover .col-gioHang{
+	border: white solid 1px;
+}
+
+.title-gioHang{
+	background-color: skyblue;
+	color: yellow
+}
+
+.products-info>img{
+	width: 200px;
+	height: 285px;
+}
+
+/* Phần thêm xoá giỏ hàng */
+
+#txtSua{
+	border: #ccc solid 1px;
+	border-radius: 5px;
+}
+
+/* Chrome, Opera, Safari */
+::-webkit-input-placeholder {
+	font-style: italic;
+	text-align: center
+  }
+  
+  /* Firefox 19+ */
+  ::-moz-placeholder {
+	font-style: italic;
+	text-align: center
+  }
+  
+  /* IE 10+ */
+  :-ms-input-placeholder {
+	font-style: italic;
+	text-align: center
+  }
+  
+  /* Firefox 18- */
+  :-moz-placeholder {
+	font-style: italic;
+	text-align: center
+  }
+
+  .btnSua{
+	background-color: skyblue;
+	border: skyblue 2px solid;
+	color: yellow;
+	border-radius: 3px;
+	padding: 5px 15px;
+	margin: 5px 5px;
+  }
+
+  .btnXoa{
+	background-color: skyblue;
+	border: skyblue 2px solid;
+	color: yellow;
+	border-radius: 3px;
+	padding: 5px 15px;
+	margin: 5px auto;
+}
+
+/* Phân trang */
+.divPhanTrang>button{
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	margin: 10px 5px;
+
+	
+	color: #dee4f0;
+	border: solid 1px #0a70f7;
+	background: #0077ff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#162cf7), to(#b1fd25));
+	/* background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e); */
+	/* filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#162cf7', endColorstr='#b1fd25'); */
+}
+
+.divPhanTrang>button:active{
+	color: #6aabe7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d5ff17), to(#0a6cff));
+	/* background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f); */
+	/* filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a6cff', endColorstr='#d5ff17'); */
+}
+
+.divPhanTrang{
+	text-align: center;
 }
